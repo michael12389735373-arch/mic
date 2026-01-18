@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* Main container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Store title */
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Products grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Product card */
+.product {
+    background: #f9f9f9;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.product img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Product title */
+.product h2 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.product p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Price */
+.product p:last-of-type {
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+/* Add to cart button */
+button {
+    background: linear-gradient(135deg, #6a5cff, #8e7bff);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+    background: linear-gradient(135deg, #5848ff, #7a66ff);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(106, 92, 255, 0.4);
+}
+
+/* Button click */
+button:active {
+    transform: scale(0.98);
+}
+
+/* footer */
+footer{
+    background-color: #5448ff;
+    padding: 20px;
+    margin-top: 10px;
+    color: hsl(0, 17%, 94%);
+    text-align: center;
+}     
